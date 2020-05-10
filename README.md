@@ -9,13 +9,13 @@
 ## What is Inside JS Engine
 
 - the bigges thing is reading our code and executing it
-1. MEMORY HEAP - we need a place to store and write information (ie variables, ...)
-               - all programs are just read and write operations
-               - memory allocation
-               - watch out for MEMORY LEAKS (when garbage collection fails)
-2. CALL STACK - a place to run our code in order
-              - keeps track of where we're at in our code in execution
-              - watch out for STACK OVERFLOW
+1. MEMORY HEAP - we need a place to store and write information (ie variables, ...) <br>
+               - all programs are just read and write operations <br>
+               - memory allocation <br>
+               - watch out for MEMORY LEAKS (when garbage collection fails) 
+2. CALL STACK - a place to run our code in order <br>
+              - keeps track of where we're at in our code in execution <br>
+              - watch out for STACK OVERFLOW <br>
               
 ## Single Threaded
 
@@ -25,7 +25,7 @@
 
 ## JS Runtime
 
-- we also have JS RUNTIME on top of the CALL STACK
+- we also have JS RUNTIME on top of the CALL STACK in browsers
 - if we have an instruction that runs for a while, we can't continue on in our CALL STACK
 - JS RUNTIME has WEB API that runs in the background - WEB API is the WINDOW OBJECT
 - So if CALL STACK sees async code (ie event listeners, HTTP request, etc) it goes, "this is not for me, send it to WEB API)
