@@ -27,7 +27,7 @@
 
 - we also have JS RUNTIME on top of the CALL STACK in browsers
 - if we have an instruction that runs for a while, we can't continue on in our CALL STACK
-- JS RUNTIME has WEB API that runs in the background - WEB API is the WINDOW OBJECT
+- JS RUNTIME is the browser-WEB API that runs in the background - WEB API is the WINDOW OBJECT
 - So if CALL STACK sees async code (ie event listeners, HTTP request, etc) it goes, "this is not for me, send it to WEB API)
   and it continues executing
 - When async code is done WEB API sends it to CALLBACK QUEUE
